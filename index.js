@@ -41,9 +41,9 @@ class Quiz {
   }
 }
 
-start.addEventListener('click', () => {
+start.addEventListener('click', async () => {
   start.hidden = true
-  getQuiz(1);
+  await getQuiz(1);
 })
 
 const getQuiz = async (index) => {
